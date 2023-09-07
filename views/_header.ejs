@@ -1,0 +1,39 @@
+<!--NavBar-->
+<base href="/">
+
+<link rel="stylesheet" type="text/css" href="/css/header.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+<div class="navbar">
+    <div class="container">
+        <div class="nameOfApp"><a href="/"><i class="bi bi-person-circle"></i> Employee-Review</a></div>
+        <% if (locals.user){ %>
+            <%if(locals.user.isAdmin){%>
+                <div class="navbar-items">  
+                    <a href="/admin/assignWork">Assign Work</a>
+                    <a href="/admin/view-employee">Employees</a>
+                    <a href="/admin/add-employee">Add Employee</a>
+                    <span class="nameOfUser"><button><i class="bi bi-person-fill"></i><%= locals.user.name%>  </button></span>&nbsp; 
+                    <button><a href="/users/sign-out" ><i class="bi bi-box-arrow-right"></i> Sign Out </a></button>
+                    
+                </div>
+            <%}else{%>    
+                <div class="logoutbtn">
+                    <span class="nameOfUser"><button><i class="bi bi-person-fill"></i><%= locals.user.name%>  </button></span>  
+                    <button><a href="/users/sign-out" ><i class="bi bi-box-arrow-right"></i>Sign Out</a> </button>
+                </div>
+            <%}%>
+            
+        <%} else { %>
+            <div class="userbtn">
+                <ul>
+                    <li><button><a href="/users/sign-in"> Sign In </a></button></li>
+                    <li><button><a href="/users/sign-up"> Sign Up </a></button></li>
+                </ul>
+                    
+            </div>
+        
+        <%}%>  
+    </div> 
+</div>
+    

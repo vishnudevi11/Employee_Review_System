@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERS</title>
+</head>
+
+<body>
+    <div class="homePage">
+        <div class="home-box">
+            <i class="text-colr">Welcome to Employee Review System that helps the admin identify top-performing employees by assigning co-worker.
+                 It also allows the admin to promote employees to admin status and add new employees. This system creates a culture of 
+                 accountability and promotes excellence, leading to better hiring decisions and a stronger workforce.</i>
+        
+    <%if(locals.user){%>
+            <% if(!locals.user.isAdmin){ %>
+                <div class="adminPass">
+                    <p>If You are admin,Enter the admin password here</p>
+                    <form action="/users/makeAdmin" method="post">
+                        <input name="admin_password" type="password" placeholder="Password">
+                        <button type="submit" class="submitHomeButton"> Enter as Admin</button>
+                    </form>
+                </div>
+            <%}%>
+            <hr>
+        
+            <div class="review-content">
+                <div class="employeereview">
+                    <p>
+                        <h5>Kindly, review your co-employees<h5>
+                <h6><i>This task is assigned by the Admin</i></h6>
+                    </p>
+                
+                </div>
+
+            <div class="reviewBox">
+                <% for(let i = 0 ;i<recipent.length ; i++ ) {%>
+                    <%if(recipent[i] != null) {%>
+                        <div class="outerBox">
+                            <h6>
+                                <strong>To : <%= recipent[i].name%></strong>
+                            </h6>
+                            <div class="innerBox">
+                                <form action="/reviews/newReview/<%= recipent[i]._id %>" method="get">
+                                    <textarea class="formClass" placeholder="Review, here !" name="newReview" rows="5"id="floatingTextarea2">
+                                    </textarea>
+                                    <br>
+                                    <button type="submit" class="submitHomeButton"><strong>Submit </strong> </button>
+                                </form>
+                            </div>
+                        </div>
+                    <%}%>
+                <%}%>   
+            </div>
+            </div>
+        <hr>
+            <div class="myreview">
+            <h5>My Reviews</h5>
+            </div>
+            <div class="reviewBox">
+
+                <div class="card-out">
+                    <% for(let review of reviews ) {%>
+                        <div class="in-card">
+                            <p class="cls-txt"><strong>From : <%= review.name %> </strong></p>
+                            <h5 class="cls-txt">Message : <%= review.content %> </h5>
+                              
+                        </div>
+                    <%}%>    
+                </div>
+        </div>
+    <%}%>  
+    </div>       
+    </div>
+</body>
+</html>

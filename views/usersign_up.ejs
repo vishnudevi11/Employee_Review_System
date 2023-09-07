@@ -1,0 +1,25 @@
+<!--SignUp Panel-->
+<base href="/">
+
+<link rel="stylesheet" href="/css/sign.css">
+<div class="mainContainer ">
+    <div class="formInput">
+        <h2>Create Account</h2>
+        <form method="POST" action="/users/create" >
+            <label>Name<input type="Name" name="name" placeholder="Enter Name" required></label>
+            <label>Email<input type="email" name="email" placeholder="Enter Email" required></label>
+            <label>New Password<input type="password" name="password" placeholder="Enter New Password" required></label>
+            <label>Confirm Password<input type="password" name="confirmPassword" placeholder="Confirm New password" required></label><br>
+            <!-- <select class="form-select" id="role" name="role" aria-label="Default select example" required>
+                <option selected value="employee">Employee</option>
+                <option value="admin">Admin</option>
+            </select> -->
+            
+            <div class= 'buttons'>
+                <div class = 'submitButtons' style="width: 30%;">
+                    <button type="submit">Sign Up</button>
+                </div>
+                
+            </div>
+    </div>
+</div>
