@@ -1,0 +1,85 @@
+/* The styling the form  for sign-in / sign-up / forgetPassword*/
+
+.mainContainer{
+    margin:0;
+    padding:0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    min-height: 50vh;
+    width: 100vw;
+    place-items: center;
+}
+.formInput{
+    background-color:#fb7d08;
+    height: 100%;
+    width: 100%;
+    margin:20px;
+    border-radius:20px;
+    box-sizing: border-box;
+}
+.formInput h2{
+    color:rgb(253, 250, 250);
+    margin:20px;
+    display: flex;
+    justify-content: center;
+}
+.formInput form{
+    display: grid;
+    margin:1px;
+    justify-content: center;
+}
+form input{
+    width: 100%;
+    height: 35px;
+    border-radius: 15px;
+    padding: 5px;
+    justify-content: center;
+    border:none;
+    border-color: rgb(249, 245, 245);
+}
+form a{
+    color: white;
+    text-decoration: none;
+}
+form a:hover{
+    color:black;
+    text-decoration: underline;
+}
+
+/* Styling the button, and submit button */
+.buttons{
+    display: flex;
+    margin:15px;
+    justify-content:center;
+    margin-top:15px;
+}
+.submitButtons .submit{
+    font-size:15px;
+    font-weight: 700;
+}
+.submitButtons button{
+    padding:8px;
+    border-radius: 10px;
+    color:#fb7d08;
+    background-color:white;
+}
+.submitButtons button:hover{
+    background-color:black;
+    color:white;
+}
+
+.forgetPassword{
+    display: flex;
+    justify-content: center;
+    font-size:15px;
+}
+.extra{
+    text-align: center;
+    margin-top:5px;
+}
+.extra a:hover{
+    color:black;
+    text-decoration: underline;
+}

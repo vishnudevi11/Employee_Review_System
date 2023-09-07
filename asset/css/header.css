@@ -1,0 +1,163 @@
+/* Header of the page */
+/* Styling navBar */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Mr+Dafoe&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    font-family:'Josefin Sans', sans-serif;
+    background-color:#fb7d08;
+    display: flex;
+    margin:auto;
+    padding: 2rem 6%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0 5px 10px -5px #fb7d08;
+}
+.container {
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+}
+.nameOfApp {
+    margin-left:.1rem;
+}
+.nameOfApp a{
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(243, 243, 238);
+    font-weight:bold;
+    align-items: center;
+}
+.nameOfApp i{
+    color:rgb(9, 8, 8);
+    font-size:25px;
+}
+
+/* Sign-in and Sign-up  button in navbar*/
+.userbtn{
+    margin:.1rem;
+}
+.userbtn ul{
+    position: relative;
+    display: flex;
+    color: #fff;
+}
+
+.userbtn li{
+    list-style: none;
+    font-size: 1rem;
+    margin-top:15px;
+    margin-right:10px;
+    line-height: 30px;
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: all 0.5s ease;
+}
+.userbtn li a{
+    text-decoration: none;
+    color: #f3f0f0;
+    font-weight:600;
+    margin:12px;
+}
+.userbtn  li button{
+    background-color: #050505;
+    box-sizing: border-box;
+    border-radius:10px;
+    border: none;
+}
+.userbtn li button a:hover{
+    color:#0b0b0a;
+}
+.userbtn li button:hover{
+    color: #0e0e0d;
+    background-color:#f8f7f3;
+}
+
+/* Admin-homepage navbar */
+.navbar-items{
+    position: relative;
+    color: #fff;
+    line-height: 25px;
+    transition: all 0.5s ease;
+    justify-content: space-around;
+} 
+.navbar-items  a{
+    font-size: 20px;
+    color: rgb(245, 242, 242);
+    margin:12px;
+    font-weight:bold;
+    text-decoration: none; 
+}
+.navbar-items button{
+    padding:2px;
+    border-radius:15px;
+    border-style:none;
+    background-color: #050505;
+}
+.navbar-items button a{
+    font-size:18px;
+    color:#fb7d08;
+    font-weight: bold;
+    
+}
+.navbar-items .nameOfUser button{
+    font-size: 20px;
+    color:#fb7d08;
+    font-weight:bold;
+    background-color: #f3f0f0;
+}
+.navbar-items button:hover{
+    background-color: #f3f0f0;
+}
+.navbar-items button a:hover{
+    color: #fb7d08;
+}
+.navbar-items a:hover{
+    color: #050505;
+    text-shadow: 5px 5px 6px #f9f7f7;
+} 
+
+/* Employee-homepage  navbar*/
+.logoutbtn{
+    position: relative;
+    color: #fff;
+    line-height: 25px;
+    transition: all 0.5s ease;
+    justify-content: space-around;
+}
+.logoutbtn button{
+    padding:5px;
+    margin:2px;
+    border-radius:15px;
+    border-style:none;
+    background-color: #050505;
+}
+.logoutbtn button a{
+    font-size:18px;
+    margin:12px;
+    color:#fb7d08;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logoutbtn .nameOfUser button{
+    font-size: 20px;
+    color:#fb7d08;
+    font-weight:bold;
+    background-color: #f3f0f0;
+}
+.logoutbtn button:hover{
+    background-color: #f3f0f0;
+}
+.logoutbtn button a:hover{
+    color: #fb7d08;
+}
+.logoutbtn a:hover{
+    color: #050505;
+    text-shadow: 5px 5px 6px #f9f7f7;
+} 
