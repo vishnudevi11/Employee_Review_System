@@ -5,11 +5,11 @@ ________________________________________________________________________________
 **Project view**
 Admin's Panel
   -Add Employee
-  *Delete Employee
-  +Update Employee
-  -Assign review to Employee
+  * Delete Employee
+  * Update Employee
+  * Assign review to Employee
 Employee's Panel
-  *Submit Reviews assigned to it
-  +View reviews given by others
+  * Submit Reviews assigned to it
+  * View reviews given by others
   
 
