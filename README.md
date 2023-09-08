@@ -3,12 +3,12 @@ A web application is made for employee reviews.Employees can provide each other 
 _______________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 **Project view**
-Admin's Panel
-  -Add Employee
+*Admin's Panel*
+  * Add Employee
   * Delete Employee
   * Update Employee
   * Assign review to Employee
-Employee's Panel
+*Employee's Panel*
   * Submit Reviews assigned to it
   * View reviews given by others
   
