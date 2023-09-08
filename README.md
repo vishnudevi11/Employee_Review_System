@@ -4,12 +4,12 @@ ________________________________________________________________________________
 
 **Project view**
 Admin's Panel
-  *Add Employee
-  ^Delete Employee
-  $Update Employee
-  *Assign review to Employee
+  -Add Employee
+  *Delete Employee
+  +Update Employee
+  -Assign review to Employee
 Employee's Panel
   *Submit Reviews assigned to it
-  ^View reviews given by others
+  +View reviews given by others
   
 
