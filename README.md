@@ -37,7 +37,7 @@ ________________________________________________________________________________
 * MongoDB
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## **Folder Structure**
-
+````
 employeereviewsystem
          |
          |
@@ -47,4 +47,38 @@ employeereviewsystem
          |                  |------>home.css
          |                  |------>sign.css
          |
-       config
+       config-------------->|------>flashmiddleware
+          |                 |------>mongoose
+          |                 |------>passport-local
+          |
+     controller------------>|------>admin_controller
+          |                 |------>homepage_controller
+          |                 |------>review_controller
+          |                 |------>user_controller
+          |
+       models-------------->|------>review.js
+          |                 |------>user.js
+          |
+          |
+       routes-------------->|------>admin.js
+          |                 |------>index.js
+          |                 |------>review.js
+          |                 |------>users.js
+          |
+        views-------------->|------>_footer.ejs
+          |                 |------>_header.ejs
+          |                 |------>addEmployee.ejs
+          |                 |------>admin.ejs
+          |                 |------>employee.ejs
+          |                 |------>forgetpassword.ejs
+          |                 |------>homepage.ejs
+          |                 |------>layout.ejs
+          |                 |------>usersign_in.ejs
+          |                 |------>usersign_up.ejs
+          |
+          |
+     node_modules
+       index.js
+     package-lock.js
+     package.json
+````
