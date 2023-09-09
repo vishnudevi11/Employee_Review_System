@@ -27,8 +27,9 @@ npm start or nodemon index.js
 ````
 * Visit local browser- http://localhost:8080/
 * Hosted Link- https://employee-review-system-esft.onrender.com
+* Video Link- https://drive.google.com/file/d/16fr1SJZIS8DPEkXKkrgRVOrs_U6B_Eed/view?usp=drive_link
 
-## **If you want User to make an admin,use the secret key : ers**
+## **If you want to make user as an admin,use the secret key : ers**
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## **Tech Stack**
 * NodeJs
