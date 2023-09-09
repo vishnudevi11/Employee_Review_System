@@ -48,14 +48,14 @@ employeereviewsystem
          |                  |------>home.css
          |                  |------>sign.css
          |
-       config-------------->|------>flashmiddleware
-          |                 |------>mongoose
-          |                 |------>passport-local
+       config-------------->|------>flashmiddleware.js
+          |                 |------>mongoose.js
+          |                 |------>passport-local.js
           |
-     controller------------>|------>admin_controller
-          |                 |------>homepage_controller
-          |                 |------>review_controller
-          |                 |------>user_controller
+     controller------------>|------>admin_controller.js
+          |                 |------>homepage_controller.js
+          |                 |------>review_controller.js
+          |                 |------>user_controller.js
           |
        models-------------->|------>review.js
           |                 |------>user.js
